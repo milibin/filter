@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 滤镜：灰度样式的设定 */
+        img {
+            width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+
+            /* 设置灰度0~1 */
+            filter: grayscale(0.8);
+            /* 过渡属性  */
+            transition: all 5s;
+
+        }
+
+        img:hover {
+            filter: none;
+        }
+
+        .img1 {
+            filter: grayscale(1);
+            transition: all 15s;
+        }
+
+        .img2 {
+            /* 设置亮度/曝光度 0~*/
+            filter: brightness(100);
+        }
+
+        .img3 {
+            /* 设置褐色属性0~1 */
+            filter: sepia(1);
+        }
+
+        .img4 {
+            /* 设置模糊度0px~ */
+            filter: blur(10px);
+        }
+
+        .img5 {
+            /* 设置对比度0~5 */
+            filter: contrast(5);
+        }
+
+        .img6 {
+            /* 设置饱和度0~ */
+            filter: saturate(2);
+        }
+
+        .img7 {
+            /* 设置胶片效果0~ */
+            filter: invert(100);
+        }
+
+        .img8 {
+            /* 设置色相旋转0deg~ */
+            filter: hue-rotate(200deg) blur(10px);
+        }
+
+        .img9 {
+            filter: brightness(100) grayscale(1);
+        }
+    </style>
+</head>
+
+<body>
+    <img class="img1" src="../img/Yui hatano.jfif" alt="">
+    <img class="img2" src="../img/Yui hatano.jfif" alt="">
+    <img class="img3" src="../img/Yui hatano.jfif" alt="">
+    <img class="img4" src="../img/Yui hatano.jfif" alt="">
+    <img class="img5" src="../img/Yui hatano.jfif" alt="">
+    <img class="img6" src="../img/Yui hatano.jfif" alt="">
+    <img class="img7" src="../img/Yui hatano.jfif" alt="">
+    <img class="img8" src="../img/Yui hatano.jfif" alt="">
+    <img class="img9" src="../img/Yui hatano.jfif" alt="">
+</body>
+
+</html>
